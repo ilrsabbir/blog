@@ -1,0 +1,23 @@
+{
+    "post":[
+        {"id":"1",
+        "title":"Monkey D Luffy Frame Tv Art",
+        "content":"Monkey D. Luffy is a fictional character and the main protagonist of the manga and anime series One Piece, created by Eiichiro Oda. One Piece is one of the most popular and long-running manga and anime series globally.\n\n  Luffy is a young and ambitious pirate with the goal of becoming the Pirate King by finding the legendary treasure known as He gained the ability to stretch his body like rubber after eating a Devil Fruit called the Gomu Gomu no Mi. This fruit granted him the powers of a rubber man but also made him unable to swim.",
+        "image":"../src/img/cartoon.jpg",
+        "headerImage":"../src/img/cartoonPortrait.jpg"
+        },
+        {"id":"2",
+        "title":"Luffy Frame Tv Art",
+        "content":"Monkey D. Luffy is a fictional character and the main protagonist of the manga and anime series One Piece, created by Eiichiro Oda. One Piece is one of the most popular and long-running manga and anime series globally.\n\n  Luffy is a young and ambitious pirate with the goal of becoming the Pirate King by finding the legendary treasure known as He gained the ability to stretch his body like rubber after eating a Devil Fruit called the Gomu Gomu no Mi. This fruit granted him the powers of a rubber man but also made him unable to swim.",
+        "image":"../src/img/cartoon.jpg",
+        "headerImage":"../src/img/car.jpg"
+        },
+        {"id":"3",
+        "title":"Monkey D Luffy",
+        "content":"Monkey D. Luffy is a fictional character and the main protagonist of the manga and anime series One Piece, created by Eiichiro Oda. One Piece is one of the most popular and long-running manga and anime series globally.\n\n  Luffy is a young and ambitious pirate with the goal of becoming the Pirate King by finding the legendary treasure known as He gained the ability to stretch his body like rubber after eating a Devil Fruit called the Gomu Gomu no Mi. This fruit granted him the powers of a rubber man but also made him unable to swim.",
+        "image":"../src/img/cartoon.jpg",
+        "headerImage":"../src/img/cartoonPortrai.jpg"
+        }
+        
+    ]
+}

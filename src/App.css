@@ -1,0 +1,929 @@
+/*
+ ###########################################
+ ---------------Common CSS------------------
+ ###########################################
+*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 85%;
+  margin: 0 auto;
+}
+
+/*
+ ###########################################
+ ---------------Form CSS------------------
+ ###########################################
+*/
+form{
+  padding: 30px;
+}
+form input{
+  width: 100%;
+  padding: 5px 10px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  font-size: 17px;
+  font-family: monospace;
+  font-weight: 700;
+  outline: none;
+  padding-top: 10px;
+}
+form button{
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: monospace;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: fit-content;
+  transition: all .3s ease-in-out;
+}
+form button:hover{
+  background: white;
+  color: black;
+}
+/*
+ ###########################################
+ ----------------Error page-----------------
+ ###########################################
+*/
+.error-page{
+  width: 100%;
+  height: calc(100vh - 10vh);
+  background: url(./img/error.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*
+ ###########################################
+ -----------Navigation Menu Start-----------
+ ###########################################
+*/
+.nav{
+  width: 100%;
+  background-color: bisque;
+}
+nav{
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-link, h1{
+  font-size: 22px;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: #3c495e;
+  text-decoration: none;
+  letter-spacing: 1rem;
+}
+menu{
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+menu .active{
+  color: salmon;
+}
+.page-link{
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: #3c495e;
+  text-decoration: none;
+}
+/*
+ ###########################################
+ -----------Navigation Menu End-------------
+ ###########################################
+*/
+
+/*
+ ###########################################
+ --------------Home Page start--------------
+ ###########################################
+*/
+.HomePage{
+  height: calc(100vh - 10vh);
+}
+.homePage{
+  width: 100%;
+  height: calc(100vh - 10vh);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.homePageImg{
+  position: relative;
+}
+.image-f{
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(95%, -30%);
+  z-index: 2;
+}
+.image-s{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-90%,-80%);
+}
+.homePageImg .img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.homePageImg .img{
+  border: 3px solid black;
+  height: 320px;
+  width: 275px;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  position: relative;
+}
+.homePageImg .img::after{
+  content: '';
+  position: absolute;
+  height: calc(320px + 20px);
+  width: calc(275px + 20px);
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  z-index: -1;
+  border: 3px solid black;
+}
+.first{
+  background-color: deepskyblue;
+}
+.first::after{
+  background-color: lightgreen;
+}
+.second{
+  background-color: pink;
+}
+.second::after{
+  background-color: deepskyblue;
+}
+
+.home-title{
+  font-size: 5em;
+  font-weight: 900;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-seri;
+}
+
+.homePage .homePageDetails .home-des{
+  width: 350px;
+  font-size: 16px;
+  font-family: monospace;
+  color: #888;
+  text-align: justify;
+  padding: 20px 10px;
+}
+
+.homeContactBtn{
+  padding: 10px 25px;
+  border: none;
+  background: pink;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 3px black;
+  transition: all ease-in-out 0.2s;
+  font-size: 16px;
+  font-family: monospace;
+}
+.homeContactBtn:hover{
+  box-shadow: 3px 3px 7px deeppink;
+}
+.overflow{
+  position: absolute;
+  bottom: -70px;
+}
+/*
+ ###########################################
+ --------------Home Page end----------------
+ ###########################################
+*/
+
+/*
+ ###########################################
+ --------------Contact Page Start-----------
+ ###########################################
+*/
+.contact-page{
+  width: 100%;
+  height: calc(100vh - 10vh);
+  background-image: linear-gradient(45deg, #48c6ef 0%, #6f86d6 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-card{
+  width: 60%;
+  height: fit-content;
+  background: wheat;
+  box-shadow: 0px 0px 20px 0px black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.contact-img{
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.contact-img img{
+  max-width: 100%;
+  width: 30%;
+  border-radius: 50%;
+}
+.contact-img h2{
+  font-size: 32px;
+  color: #3c495e;
+  font-family: monospace;
+}
+.contact-img p{
+  font-size: 16px;
+  font-family: monospace;
+  color: #888;
+  text-align: justify;
+  padding: 0 30px;
+}
+.contact-form{
+  background: #cce4ff;
+}
+.contact-form .title{
+  padding: 30px 0 0px 30px;
+}
+.contact-form .title span{
+  font-size: 25px;
+  font-family: fantasy;
+  font-weight: 700;
+  color: black;
+}
+.contact-form form input{
+  color: black !important;
+  border-bottom: 1px solid black !important;
+}
+textarea{
+  resize: both;
+  overflow: auto;
+  width: 360px;
+  min-height: 120px;
+  min-width: 360px;
+  max-width: 360px;
+  max-height: 120px;
+  padding: 5px 10px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  color: black;
+  font-size: 17px;
+  font-family: monospace;
+  font-weight: 700;
+  outline: none;
+  padding-top: 10px;
+  scrollbar-width: none;
+}
+textarea::-webkit-scrollbar{
+  width: none;
+}
+textarea::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+textarea::-webkit-scrollbar-thumb{
+  background: #888;
+  border-radius: 6px;
+}
+.contact-form form button{
+  border: 1px solid black;
+  color: black;
+}
+.contact-icons{
+  display: flex;
+  align-content: center;
+  gap: 20px;
+  padding: 0 30px;
+  font-size: 35px;
+  color: black;
+  padding-bottom: 20px;
+}
+.contact-icons .icon{
+  cursor: pointer;
+}
+/*
+ ###########################################
+ --------------Contact Page End-------------
+ ###########################################
+*/
+
+/*
+ ###########################################
+ --------------LogIn Page Start-------------
+ ###########################################
+*/
+.login-page{
+  width: 100%;
+  height: calc(100vh - 10vh);
+  background: rgb(34,46,66);
+  background: linear-gradient(36deg, rgba(34,46,66,1) 10%, rgba(93,54,75,1) 50%, rgba(184,90,88,1) 80%); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card{
+  width: 60%;
+  height: 70%;
+  background: wheat;
+  box-shadow: 0px 0px 20px 0px black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.login-img{
+  background: rgb(34,46,66);
+  background: linear-gradient(36deg, rgba(34,46,66,1) 10%, rgba(67,32,62,1) 41%, rgba(103,48,71,1) 97%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.login-img img{
+  max-width: 100%;
+  width: 50%;
+  border-radius: 50%;
+}
+.login-img h2{
+  font-size: 32px;
+  color: #3c495e;
+  font-family: monospace;
+}
+.login-form{
+  background: rgb(140,61,80);
+  background: linear-gradient(36deg, rgba(140,61,80,1) 0%, rgba(166,73,84,1) 43%, rgba(212,88,90,1) 100%); 
+}
+.login-form .title{
+  padding: 30px 0 20px 30px;
+}
+.login-form .title span{
+  font-size: 25px;
+  font-family: fantasy;
+  font-weight: 700;
+  color: white;
+}
+
+.forget-create{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  gap: 7px;
+}
+.forget-create button{
+  width: auto;
+  height: fit-content;
+  background: transparent;
+  border: none;
+  color: white;
+  text-decoration: underline;
+  font-size: 17px;
+  font-family: monospace;
+  cursor: pointer;
+}
+/*
+ ###########################################
+ --------------LogIn Page End---------------
+ ###########################################
+*/
+
+/*
+ ###########################################
+ -------------signup Page Start-------------
+ ###########################################
+*/
+.signup-page{
+  width: 100%;
+  height: calc(100vh - 10vh);
+  background-image: linear-gradient(45deg, #2af598 0%, #009efd 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-card{
+  width: 60%;
+  height: 70%;
+  background: wheat;
+  box-shadow: 0px 0px 20px 0px black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.signup-img{
+  background-image: linear-gradient(45deg, #c1dfc4 0%, #deecdd 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.signup-img img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.signup-img h2{
+  font-size: 32px;
+  color: #3c495e;
+  font-family: monospace;
+}
+.signup-form{
+  background-image: linear-gradient(45deg, #0ba360 0%, #3cba92 100%);
+}
+.signup-form .title{
+  padding: 30px 0 20px 30px;
+}
+.signup-form .title span{
+  font-size: 25px;
+  font-family: fantasy;
+  font-weight: 700;
+  color: white;
+}
+
+.haveOneAccountBtn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  gap: 7px;
+}
+.haveOneAccountBtn button{
+  width: auto;
+  height: fit-content;
+  background: transparent;
+  border: none;
+  color: white;
+  text-decoration: underline;
+  font-size: 17px;
+  font-family: monospace;
+  cursor: pointer;
+}
+/*
+ ###########################################
+ -------------signup Page End---------------
+ ###########################################
+*/
+.blogPage{
+  width: 100%;
+  min-height: calc(100vh - 10vh);
+  padding: 0 0 50px 0;
+}
+.blogTitle{
+  text-align: center;
+  padding: 30px 0;
+}
+.blogItems{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.blogItem{
+  background: white;
+  box-shadow: 2px 2px 5px black;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+.blogItem:hover .blogItemImg img{
+  transform: scale(1.1);
+}
+
+.blogItemImg{
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+.blogItemImg img{
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
+  display: block;
+  transition: all ease-in-out .3s;
+}
+.blog-details{
+  padding: 0 30px 30px 30px;
+}
+.postTitle{
+  font-size: 20px;
+  font-family: monospace;
+  margin-top: 20px;
+}
+.postDes{
+  font-size: 15px;
+  font-family: monospace;
+  padding: 30px 0 0 0;
+}
+.morePostDesBtn{
+  padding: 5px 15px;
+  border: none;
+  outline: none;
+  background: peachpuff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px black;
+  cursor: pointer;
+}
+
+
+/*
+ ###########################################
+ ---------profileMenu Page Start------------
+ ###########################################
+*/
+
+.profileMenu{
+  position: relative;
+}
+.profileImage{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid black;
+  position: relative;
+}
+.profileImage img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background: gray;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+}
+.profile-menu{
+  position: absolute;
+  right: 0;
+  top: calc(100% + 20px);
+  
+}
+.p-menu{
+  width: 250px;
+  height: fit-content;
+  padding: 30px 15px;
+  background: peachpuff;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 10;
+}
+.p-menu::before{
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  right: 15px;
+  width: 16px;
+  height: 16px;
+  background: peachpuff;
+  box-shadow: 2px 2px 5px black;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+
+h5{
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: #3c495e;
+  text-decoration: none;
+}
+span{
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 400;
+  color: #3c495e;
+  text-decoration: none;
+  letter-spacing: .2rem;
+}
+.profile-link{
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: #3c495e;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  padding: 10px 0;
+}
+.logOut{
+  width: fit-content;
+  padding: 7px 20px;
+  background: crimson;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+/*
+ ###########################################
+ ---------AdminNav menu Start---------------
+ ###########################################
+*/
+
+.admin-nav{
+  width: 20%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #cce4ff;
+  border-right: 2px solid crimson;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.admin-nav .admin-container{
+  height: 90%;
+  width: fit-content;
+}
+.admin-nav nav{
+  display: block;
+}
+.admin-nav nav .admin-logo h1{
+  letter-spacing: .3rem;
+  font-size: 32px;
+}
+
+.admin-nav .admin-container menu{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 100px;
+}
+.admin-nav .admin-container menu .admin-page-link{
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 20px;
+  color: purple;
+  padding-top: 10px;
+}
+.admin-nav .admin-container menu .active{
+  color: crimson;
+}
+
+/*
+ ###########################################
+ ---------Dashboard menu Start--------------
+ ###########################################
+*/
+
+.admin-contant{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: end;
+}
+.admin-contant .admin-contant-cover{
+  width: calc(100% - 20%);
+  height: fit-content;
+}
+.admin-contant .admin-contant-cover .admin-contant-details{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.admin-contant .admin-contant-cover .admin-contant-details h6{
+  font-size: 100px;
+  font-family: sans-serif;
+  font-weight: 900;
+  color: white;
+  -webkit-text-stroke:2px crimson;
+  text-shadow: 5px 5px 15px black;
+}
+.admin-contant .admin-contant-cover .admin-contant-details .bloglist{
+  height: 100%;
+  width: 100%;
+  padding: 50px 0;
+}
+.admin-contant .admin-contant-cover .admin-contant-details .bloglist .title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+}
+.admin-contant .admin-contant-cover .admin-contant-details .bloglist .title::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: black;
+  border-radius: 5px;
+
+}
+.admin-contant .admin-contant-cover .admin-contant-details .bloglist .title h2{
+  font-family: monospace;
+}
+.admin-contant .admin-contant-cover .admin-contant-details .bloglist .title button{
+  font-size: 20px;
+  font-family: monospace;
+  padding: 5px 15px;
+  background-color: transparent;
+  border: 1px solid green;
+  border-radius: 10px;
+  color: green;
+  cursor: pointer;
+}
+.admin-contant .admin-contant-cover .admin-contant-details .bloglist .title button span{
+  font-size: 20px;
+  color: green;
+}
+.admin-contant .admin-contant-cover .admin-contant-details .bloglist .post-list{
+  margin-top: 40px;
+}
+.admin-contant .admin-contant-cover .admin-contant-details .bloglist .post-list .post{
+  padding: 7px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin: 5px 0;
+}
+.admin-contant .admin-contant-cover .admin-contant-details .bloglist .post-list .post span{
+  color: #000 !important;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.admin-contant .admin-contant-cover .admin-contant-details .bloglist .post-list .post .action{
+  display: flex;
+  gap: 10px;
+}
+.admin-contant .admin-contant-cover .admin-contant-details .bloglist .post-list .post .action button{
+  font-size: 16px;
+  font-family: monospace;
+  padding: 5px 15px;
+  background-color: transparent;
+  border: 1px solid green;
+  border-radius: 10px;
+  color: green;
+  cursor: pointer;
+}
+.editBtn{
+  color: #009efd !important;
+  border: 1px solid #009efd !important;
+}
+.deleteBtn{
+  color: crimson !important;
+  border: 1px solid crimson !important;
+}
+
+.postPage{
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.postHeaderBg{
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+/* .postHeaderBg::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background: ;
+  position: .6;
+} */
+.postheaderbgContent{
+  width: 100%;
+  height: 300px;
+  background: rgba(0, 0, 0, .7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.postheaderbgContent h1{
+  color: crimson;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: normal;
+}
+.postdetailsConent{
+  color: black;
+  letter-spacing: normal;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.5;
+  padding-top: 50px;
+}
+.addBlogTitle{
+  letter-spacing: normal;
+  font-size: 25px;
+  font-weight: 900;
+  padding: 40px 0 40px 0;
+  text-decoration: underline;
+}
+
+.inputpostTitle{
+  width: 100%;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  font-size: 18px;
+  font-weight: normal;
+}
+.textareaContent{
+  resize: both;
+  overflow: auto;
+  width: 100%;
+  min-height: 200px;
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 200px;
+  padding: 5px 10px;
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  font-size: 17px;
+  font-family: monospace;
+  font-weight: 700;
+  outline: none;
+  padding-top: 10px;
+  scrollbar-width: none;
+  margin-top: 20px;
+}
+
+textarea::-webkit-scrollbar{
+  width: none;
+}
+textarea::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+textarea::-webkit-scrollbar-thumb{
+  background: #888;
+  border-radius: 6px;
+}
+.file-wrap{
+  display: flex;
+  margin: 20px 0 30px 0;
+}
+.file{
+  color: #000;
+  font-size: 18px;
+  font-weight: 100;
+  border: none;
+  display: inline-block;
+}
+.newPostSubmitBtn{
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: black;
+  border: 1px solid black;
+  margin: 0 auto;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+}

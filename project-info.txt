@@ -1,0 +1,19 @@
+***Before Login Menu ----
+		Logo ----  {Home | Blog | Contact | Login}
+		--------------------------------------------
+***After Login Menu ----
+		Logo ----  {Home | Blog | Contact | Circle-Image{ Profile with name and number | My Account | LogOut } }
+		--------------------------------------------------------
+***Home Page Design
+***Contact form Design with Form Validation
+***Blog Page Design ----
+		Blog Thamnail Design with image
+***Post Page Design
+***Login Form and Registration Form Design with Varification
+***My Account page ---- 
+	Image upload Functionality | Name Change Fanctionality
+
+
+
+***admin panel ----
+	website logo change funtionallity | Menu add funtionality | Handle users Account | Contact Form Details Show |
